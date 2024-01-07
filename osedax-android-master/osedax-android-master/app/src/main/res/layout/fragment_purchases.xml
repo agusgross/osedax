@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.Widget.ReadingTextViewAlt"
+        android:textColor="@android:color/white"
+        android:text="@string/restore_purchases_description"
+        android:lineHeight="24dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="48dp"
+
+        />
+
+    <Button
+        android:id="@+id/restorePurchasesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        android:layout_marginTop="64dp"
+        style="@style/AppTheme.Widget.ButtonPrimaryAlt"
+        android:text="@string/restore_purchases"
+        android:drawableStart="@drawable/ic_dollar_big_alt"
+        android:paddingStart="36dp"
+
+
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="87dp"
+        android:indeterminateTint="?attr/colorAccent"
+        app:layout_constraintEnd_toEndOf="@id/restorePurchasesButton"
+        app:layout_constraintStart_toStartOf="@id/restorePurchasesButton"
+        app:layout_constraintTop_toTopOf="@id/restorePurchasesButton"
+        app:layout_constraintBottom_toBottomOf="@id/restorePurchasesButton"
+        android:visibility="gone"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

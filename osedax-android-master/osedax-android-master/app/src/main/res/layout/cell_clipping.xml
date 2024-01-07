@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="24dp"
+    android:background="@drawable/border_clipping"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/clippingTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.Widget.ReadingTextView"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            tools:text="@string/chapter_1_title"
+            android:maxHeight="100dp"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:lineHeight="32dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            />
+
+        <TextView
+            android:id="@+id/clippingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.Widget.ReadingTextView"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            tools:text="@string/chapter_1_1"
+            android:maxHeight="100dp"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:lineHeight="32dp"
+            />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/gotoTexTButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_forward"
+        android:tint="@color/colorAccent"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:padding="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:layout_gravity="center_vertical"
+        />
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_trash"
+        android:tint="@color/colorAccent"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:padding="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:layout_gravity="center_vertical"
+        />
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/end"
+        motion:duration="1000"
+        >
+
+        <KeyFrameSet>
+
+
+            <KeyPosition motion:framePosition="50"
+                motion:motionTarget="@id/arrowImageView"
+                motion:transitionEasing="accelerate"
+                motion:keyPositionType="deltaRelative"
+                motion:percentY="0.5"
+                />
+
+            <KeyPosition motion:framePosition="99"
+                motion:motionTarget="@id/arrowImageView"
+                motion:transitionEasing="decelerate"
+                motion:keyPositionType="deltaRelative"
+                motion:percentY="1"
+                />
+
+            <!--            <KeyPosition motion:framePosition="50"-->
+<!--                motion:motionTarget="@id/arrowImageView"-->
+<!--                motion:transitionEasing="decelerate"-->
+<!--                motion:keyPositionType="pathRelative"-->
+<!--                motion:percentY="0.5"-->
+<!--                />-->
+
+<!--            <KeyPosition motion:framePosition="100"-->
+<!--                motion:motionTarget="@id/arrowImageView"-->
+<!--                motion:transitionEasing="decelerate"-->
+<!--                motion:keyPositionType="pathRelative"-->
+<!--                motion:percentY="1"-->
+<!--                />-->
+
+            <KeyAttribute motion:motionTarget="@id/arrowImageView"
+                motion:framePosition="0"
+
+
+                >
+                <CustomAttribute
+                    motion:attributeName="alpha"
+                    motion:customFloatValue="0.0" />
+
+            </KeyAttribute>
+
+            <KeyAttribute motion:motionTarget="@id/arrowImageView"
+                motion:framePosition="50"
+                motion:transitionEasing="accelerate"
+
+                >
+                <CustomAttribute
+                    motion:attributeName="alpha"
+                    motion:customFloatValue="1.0" />
+            </KeyAttribute>
+
+            <KeyAttribute motion:motionTarget="@id/arrowImageView"
+                motion:framePosition="100"
+                motion:transitionEasing="decelerate"
+
+                >
+                <CustomAttribute
+                    motion:attributeName="alpha"
+                    motion:customFloatValue="0.0" />
+            </KeyAttribute>
+
+
+        </KeyFrameSet>
+
+
+    </Transition>
+
+
+
+
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint android:id="@+id/arrowImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" motion:layout_constraintTop_toTopOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintEnd_toEndOf="parent" />
+
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint android:id="@+id/arrowImageView"  android:layout_width="wrap_content" android:layout_height="wrap_content"  motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintEnd_toEndOf="parent" />
+
+    </ConstraintSet>
+
+
+</MotionScene>

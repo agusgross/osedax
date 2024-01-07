@@ -1,0 +1,31 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_padding">24dp</dimen>
+    <dimen name="radius">23dp</dimen>
+    <dimen name="border_width">2dp</dimen>
+    <dimen name="control_height">46dp</dimen>
+    <dimen name="control_width">320dp</dimen>
+    <dimen name="padding">18dp</dimen>
+    <dimen name="padding_reading">34dp</dimen>
+    <dimen name="button_radius">@dimen/radius</dimen>
+    <dimen name="button_border_width">@dimen/border_width</dimen>
+    <dimen name="button_height">@dimen/control_height</dimen>
+    <dimen name="button_width">@dimen/control_width</dimen>
+    <dimen name="button_padding">@dimen/padding</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+    <dimen name="button_drawable_padding">8dp</dimen>
+    <dimen name="edittext_radius">@dimen/radius</dimen>
+    <dimen name="edittext_border_width">@dimen/border_width</dimen>
+    <dimen name="edittext_height">@dimen/control_height</dimen>
+    <dimen name="edittext_width">@dimen/control_width</dimen>
+    <dimen name="edittext_padding">@dimen/padding</dimen>
+    <dimen name="edittext_text_size">14sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="reading_text_size">14sp</dimen>
+    <dimen name="title_text_size">64sp</dimen>
+
+</resources>

@@ -1,0 +1,57 @@
+App\Entity\User:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: [email]
+            groups: [Registration]
+            message: 'user.email.unique'      
+    properties:
+        id:
+            - NotBlank:
+                groups: [Profile]
+                message: 'user.id.not_blank'            
+            - Type:
+                groups: [Profile]
+                type: integer
+                message: 'user.id.type'            
+        email:
+            - NotBlank:
+                groups: [Registration, Profile]
+                message: 'user.email.not_blank'
+            - Email:
+                groups: [Registration, Profile]
+                message: 'user.email.type'                
+        plainPassword:
+            - NotBlank:
+                groups: [Registration]
+                message: 'user.password.not_blank'          
+            - Length:
+                groups: [Registration]
+                min: 8
+                max: 40
+                minMessage: 'user.password.length_min'
+                maxMessage: 'user.password.length_max'                        
+        firstName:
+            - NotBlank:
+                groups: [Registration, Profile]
+                message: 'user.first_name.not_blank'
+            - Length:
+                groups: [Registration, Profile]
+                min: 3
+                max: 40
+                minMessage: 'user.first_name.length_min'
+                maxMessage: 'user.first_name.length_max'                        
+        # lastName:
+        #     - NotBlank:
+        #         groups: [Registration, Profile]
+        #         message: 'user.last_name.not_blank'
+        #     - Length:
+        #         groups: [Registration, Profile]
+        #         min: 3
+        #         max: 40
+        #         minMessage: 'user.last_name.length_min'
+        #         maxMessage: 'user.last_name.length_max'                                        
+        emailNotifications:
+            - Type:
+                groups: [Registration, Profile]
+                type: boolean
+                message: 'user.email_notifications.type'

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.WelcomeFragment"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_padding"
+            >
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="6dp"
+                style="@style/AppTheme.Widget.EditText"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext|flagNoExtractUi"
+
+                >
+                <requestFocus/>
+            </EditText>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/passwordEditLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+                >
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    style="@style/AppTheme.Widget.EditText"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionGo|flagNoExtractUi"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <ImageButton
+                    android:id="@+id/revealPasswordButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/passwordEditText"
+                    app:layout_constraintBottom_toBottomOf="@id/passwordEditText"
+                    android:src="@drawable/ic_reveal"
+                    style="@style/AppTheme.Widget.ImageButton"
+                    android:layout_marginEnd="12dp"
+                    />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/recoverPasswordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/passwordEditLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="18dp"
+                android:drawableStart="@drawable/ic_open"
+                style="@style/AppTheme.Widget.ButtonSmall"
+                android:text="@string/recover_password"
+                />
+
+
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recoverPasswordButton"
+                android:layout_marginTop="16dp"
+                style="@style/AppTheme.Widget.ButtonPrimaryAlt"
+                android:text="@string/login"
+                android:drawableStart="@drawable/ic_person"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="87dp"
+                android:indeterminateTint="?attr/colorAccent"
+                app:layout_constraintEnd_toEndOf="@id/loginButton"
+                app:layout_constraintStart_toStartOf="@id/loginButton"
+                app:layout_constraintTop_toTopOf="@id/loginButton"
+                app:layout_constraintBottom_toBottomOf="@id/loginButton"
+                android:visibility="gone"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

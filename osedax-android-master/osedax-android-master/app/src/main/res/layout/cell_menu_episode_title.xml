@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:id="@+id/episodeButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.Widget.ChapterButton"
+    android:text=""
+    tools:text="absent"
+    android:textAlignment="textStart"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" />

@@ -1,0 +1,109 @@
+/* 
+  Localizable.strings
+  Osedax
+
+  Created by Gustavo Rago on 3/13/21.
+  
+*/
+"app_name" = "Osedax";
+"action_settings" = "Settings";
+"first_fragment_label" = "First Fragment";
+"second_fragment_label" = "Second Fragment";
+"next" = "Next";
+"hello_first_fragment" = "Hello first fragment";
+"hello_second_fragment" = "Hello second fragment. Arg: %1$s";
+"select_an_option" = "Please select an option.";
+"create_an_account" = "Create an account";
+"login_with_my_account" = "Login with my account";
+"email_address" = "E-MAIL ADDRESS";
+"password" = "PASSWORD";
+"recover_password" = "Recover password";
+"login" = "Login";
+"login_error" = "Wrong e-mail or password";
+"sign_up_to_start_reading" = "Sign up to start reading.";
+"all_fields_are_required" = "All fields are required";
+"nickname" = "NICKNAME";
+"first_name" = "FIRST NAME";
+"last_name" = "LAST NAME";
+"reepat_password" = "REPEAT PASSWORD";
+"sign_up" = "Sign up";
+"email_notifications" = "I want to receive an e-mail when\na new chapter is available.";
+"please_verify_the_following" = "Please verify the following";
+"user.email.unique" = "The e-mail address has been already registered";
+"user.id.type" = "The user is not valid";
+"user.email.not_blank" = "You must enter an e-mail address";
+"user.email.type" = "You must enter a valid e-mail address";
+"user.password.not_blank" = "You must enter a password";
+"user.password.length_min" = "The password must have at least 8 characters";
+"user.password.length_max" = "The password can't have more than 40 characters";
+"user.first_name.not_blank" = "You must enter your first name";
+"user.first_name.length_min" = "The first name must have at least 3 characters";
+"user.first_name.length_max" = "The first name can't have more than 40 characters";
+"user.last_name.not_blank" = "You must enter your last name";
+"user.last_name.length_min" = "The last name must have at least 3 characters";
+"user.last_name.length_max" = "The last name can't have more than 40 characters";
+"we_will_send_your_password" = "We will send your password to the e-mail associated with your account";
+"the_password_was_sent" = "The password was sent to the specified e-mail address.";
+"email_not_found" = "The specified e-mail address hasn't been registered yet.";
+"ok" = "OK";
+"title_activity_main2" = "MainActivity";
+"menu_home" = "Home";
+"menu_gallery" = "Gallery";
+"menu_slideshow" = "Slideshow";
+"account" = "account";
+"characters" = "characters";
+"favorites" = "favorites";
+"purchases" = "purchases";
+"chapters" = "chapters";
+"start" = "Start";
+"select_the" = "Select";
+"first_character" = "first character";
+"second_character" = "second character";
+"third_character" = "third character";
+"previous" = "Previous";
+"previous_character" = "Previous character";
+"select_character" = "Select character";
+"chapter_1_title" = "One";
+"chapter_1_1" = "I closes his eyes and approaches the other side of the bed, next to RE’s body. She attempts to surround her waist, but as soon as he touches him, sinks into her, until feeling the firmness of the mattress under his body, as though she would have wanted to embrace something with no bones, cotton filled. BI stands up with a jump. His chest goes up and down violently as she breathes in an agitated way, gasping for air.
+“RE...,” he babbles, watching him with an expression of terror.
+She brings closer a shaking hand to her neck, touches it with his index finger and it sinks down again... it sinks into a fluffy, spongy interior. BI starts to sob. He puts his hand to his face, covering her mouth with strength. She denies with his head in a slow way, stunned. He watches RE with a blank stare, fixed on something transparent... A fine yarn, plastic, as the nylon thread that unites the beads of her bracelets. From the skin behind each ear, it shapes a straight line, extending to both sides of his neck. It is... it is a seam. BI closes his eyes in a gesture of pain. She goes away from the body with clumsy steps, walking to the nightstand. He takes the phone in a rapid way, dials the emergency number, and stays watching it on the screen with expressionless eyes. The thumb suspended in the air, in front of the call button. Then, her countenance contracts slowly, loading up of anger. She screams, throwing the phone with violence.
+He walks through the carpeted room reaching the closet, rummages in one of the closet drawers and grabs a T-shirt. She unwraps it, finding a gun. She holds it with strength in one hand as begins to walk in circles with jittery steps. He gestures as if were talking to herself, running the back of the hand
+over his forehead covered of sweat. Some seconds pass until she stops with dry tears over his face, sighing as she props the hands on her waist. Soothed, he nods with the head to give confidence to herself and grabs the phone that he had thrown to the floor. She searches among his contacts and calls to NU+8715.
+“BI... what... what’s going on?” responds to him a tired voice, just waking up.
+“They took her.”
+“What...? To whom?”
+“He is not here, they took her,” she repeats in a dry tone, emotionless.
+“To whom? Whom have they taken?” Silence. “BI, respond me. Whom have they taken?”
+“RE, he... she is not here.”
+“How he is not there?”
+“Please...” Her voice breaks. “Please, come.”
+“Where are you? Are you at home?” Not getting an answer, she insists, “BI! Are you at home?”
+“Yes...,” he barely manages to say it, cleaning a tear of the cheek.
+“I’m coming. Hold on, I’m coming.”
+NU hangs up the communication and BI stays keeping the phone over her ear, watching RE’s body with a blank stare. She puts the device in the
+
+pocket of his jogging pants and walks towards her with cautious steps. He caresses him a hair tuft, watching her sweetly, almost melancholically. Then she lowers the eyes to her neck, where the tattoo of the fine stem of a flower grows up till reaching the side of his ear, expanding its rounded petals. A poppy. Now, split in two by a seam of transparent thread. BI takes his hand from RE’s hair, shaking it in the air as if it burned her. She passes her hand through her face, covering her mouth as his eyes redden. He drowns a scream. She walks towards the door and stops under the frame, hitting it with strength. He rests her forehead on his forearm, leaning on it. She turns the head towards RE and pulls it back at once, giving a hit to the wall once and again. Then he squeezes the gun with the hand and leaves the room, closing the door in a slam. Abandoned, RE’s body is still lying in the middle of the narrow room. His hands clinging to the sheets as if she were bundling up from the cold, with a calm countenance, dreaming deeply.
+    ";
+"purchase_now" = "Purchase now";
+"in_order_to_read" = "Purchase the full chapter in order to remove ads, or slide down to continue reading.";
+"in_order_to_read_end" = "Purchase the full chapter in order to remove ads.";
+"clipping_saved" = "The selected text was saved in favorites.";
+"clippings_empty" = "You don't have text favorites yet. Select a fragment in any part of the text and touch the Save button. You will be able to find the favorites that you save here.";
+"edit_your_profile_details" = "Edit your profile details.";
+"save" = "Save";
+"restore_purchases" = "Restore purchases";
+"restore_purchases_description" = "If you have already purchased content with your account, and you can't access all of the chapters you purchased, click on the Restore purchases button in order to download the missing episodes.";
+"purchases_restored" = "Purchases restored succesfully";
+
+"by_signing_up_you_accept" = "By signing up, you agree to our %@ and our %@.";
+"terms_and_conditions" = "Terms and Conditions";
+"privacy_policy" = "Privacy Policy";
+"support_text" = "Have trouble signing up? %@";
+"contact_us" = "Contact us";
+
+"read_free" = "Read Free";
+"remove_ads" = "Remove ads";
+"choose_your_reading_options" = "Choose your reading options";
+"try_the_free_version" = "Try the free versiopn or purchase the chapter in order to remove ads";
+"keep_reading" = "Keep reading the free version or purchase the chapter to remove ads";
+"continue_" = "Continue";

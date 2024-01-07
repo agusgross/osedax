@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.WelcomeFragment"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_padding">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/sign_up_to_start_reading"
+                style="@style/TextTitle"
+                />
+
+            <TextView
+                android:id="@+id/subtitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleTextView"
+                android:text="@string/all_fields_are_required"
+                style="@style/TextSubtitle"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:id="@+id/supportTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/subtitleTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/support_text"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                />
+
+            <EditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/supportTextView"
+                android:layout_marginTop="12dp"
+                style="@style/AppTheme.Widget.EditText"
+                android:hint="@string/nickname"
+                android:inputType="text"
+                android:imeOptions="actionNext|flagNoExtractUi"
+
+                >
+                <requestFocus/>
+            </EditText>
+
+<!--            <EditText-->
+<!--                android:id="@+id/lastNameEditText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/firstNameEditText"-->
+<!--                android:layout_marginTop="18dp"-->
+<!--                style="@style/AppTheme.Widget.EditText"-->
+<!--                android:hint="@string/last_name"-->
+<!--                android:inputType="text"-->
+<!--                android:imeOptions="actionNext|flagNoExtractUi"-->
+<!--                />-->
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/firstNameEditText"
+                android:layout_marginTop="18dp"
+                style="@style/AppTheme.Widget.EditText"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                >
+            </EditText>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/passwordEditLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+                >
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    style="@style/AppTheme.Widget.EditText"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionGo|flagNoExtractUi"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <ImageButton
+                    android:id="@+id/revealPasswordButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/passwordEditText"
+                    app:layout_constraintBottom_toBottomOf="@id/passwordEditText"
+                    android:src="@drawable/ic_reveal"
+                    style="@style/AppTheme.Widget.ImageButton"
+                    android:layout_marginEnd="12dp"
+                    />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <EditText
+                android:id="@+id/repeatPasswordEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordEditLayout"
+                android:layout_marginTop="18dp"
+                style="@style/AppTheme.Widget.EditText"
+                android:hint="@string/reepat_password"
+                android:inputType="textPassword"
+                android:imeOptions="actionGo|flagNoExtractUi"
+                />
+
+
+            <CheckBox
+                android:id="@+id/emailNotificationsCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_notifications"
+                app:layout_constraintTop_toBottomOf="@id/repeatPasswordEditText"
+                app:layout_constraintStart_toStartOf="@id/repeatPasswordEditText"
+                android:maxLines="2"
+                android:layout_marginTop="12dp"
+                android:checked="true"
+                />
+
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailNotificationsCheckbox"
+                android:layout_marginTop="16dp"
+                style="@style/AppTheme.Widget.ButtonPrimaryAlt"
+                android:text="@string/sign_up"
+                android:drawableStart="@drawable/ic_plus"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="87dp"
+                android:indeterminateTint="?attr/colorAccent"
+                app:layout_constraintEnd_toEndOf="@id/signUpButton"
+                app:layout_constraintStart_toStartOf="@id/signUpButton"
+                app:layout_constraintTop_toTopOf="@id/signUpButton"
+                app:layout_constraintBottom_toBottomOf="@id/signUpButton"
+                android:visibility="gone"
+                />
+
+
+
+            <TextView
+                android:id="@+id/termsTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/signUpButton"
+                app:layout_constraintEnd_toEndOf="@id/signUpButton"
+                app:layout_constraintTop_toBottomOf="@id/signUpButton"
+                android:text="@string/by_signing_up_you_accept"
+                android:textAlignment="center"
+                style="@style/TextTitle"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:layout_marginTop="16dp"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/layout_loading" />
+
+</RelativeLayout>

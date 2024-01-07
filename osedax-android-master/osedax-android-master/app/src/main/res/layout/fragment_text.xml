@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.blkpos.osedax.ui.LockableNestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_reading"
+                android:background="@android:color/white"
+                >
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/thumbnail_view"-->
+<!--                    tools:src="@drawable/letter_b"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingEnd="12dp"-->
+<!--                    android:paddingTop="4dp"-->
+<!--                    android:minWidth="30dp"-->
+<!--                    android:visibility="invisible"-->
+<!--                    />-->
+
+                <com.blkpos.osedax.ui.TextViewWithObservableSelection
+                    android:id="@+id/message_view"
+                    style="@style/AppTheme.Widget.ReadingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/chapter_1_1"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    />
+<!--                android:layout_marginStart="-1dp"-->
+<!--                android:layout_toEndOf="@id/thumbnail_view"-->
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/picture_1_1"
+                android:scaleType="fitCenter"
+                android:alpha="0"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_reading"
+                android:background="@android:color/white"
+                >
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/thumbnail2_view"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingEnd="12dp"-->
+<!--                    android:paddingTop="4dp"-->
+<!--                    android:minWidth="30dp"-->
+<!--                    android:visibility="invisible"-->
+<!--                    />-->
+
+                <com.blkpos.osedax.ui.TextViewWithObservableSelection
+                    android:id="@+id/message2_view"
+                    style="@style/AppTheme.Widget.ReadingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/chapter_1_1"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    />
+<!--                android:layout_marginLeft="-1dp"-->
+<!--                android:layout_toRightOf="@id/thumbnail2_view"-->
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/purchaseLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/removeAdsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/in_order_to_read"
+                    style="@style/AppTheme.Widget.ReadingTextView"
+                    />
+                    <Button
+                        android:id="@+id/purchaseButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/recoverPasswordButton"
+                        android:layout_marginTop="16dp"
+                        style="@style/AppTheme.Widget.ButtonPrimaryAlt"
+                        android:text="@string/purchase_now"
+                        android:drawableStart="@drawable/ic_dollar_big"
+                        />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.motion.widget.MotionLayout
+                android:id="@+id/arrowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:layoutDescription="@xml/scene04"
+                android:background="@android:color/white"
+                android:layout_marginBottom="30dp"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/arrowImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_down"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        </LinearLayout>
+
+
+    </com.blkpos.osedax.ui.LockableNestedScrollView>
+
+    <ImageButton
+        android:id="@+id/saveTextButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        style="@style/AppTheme.Widget.ButtonPrimary"
+        android:minWidth="0dp"
+        android:src="@drawable/ic_save"
+        android:visibility="gone"
+        tools:visibility="visible"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

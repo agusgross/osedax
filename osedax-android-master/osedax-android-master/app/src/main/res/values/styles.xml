@@ -1,0 +1,200 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="android:buttonStyle">@style/AppTheme.Widget.ButtonSmall</item>
+        <item name="android:checkboxStyle">@style/AppTheme.Widget.CheckBox</item>
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+
+    <!-- Alert Dialog -->
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextTitle" parent="AppTheme">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextSmall" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextSubtitle" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="fontPath">fonts/Helvetica45Light_22437.ttf</item>
+    </style>
+
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/Helvetica65Medium_22443.ttf</item>
+    </style>
+
+    <style name="AppTheme.Widget.ReadingTextView" parent="AppTheme.Widget.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="fontPath">fonts/Montserrat-Medium.ttf</item>
+        <item name="android:lineSpacingExtra">34sp</item>
+    </style>
+
+    <style name="AppTheme.Widget.ReadingTextViewAlt" parent="AppTheme.Widget.ReadingTextView">
+        <item name="android:lineSpacingExtra">0sp</item>
+    </style>
+
+    <style name="TextMenu" parent="AppTheme">
+        <item name="android:textSize">18sp</item>
+        <item name="fontPath">fonts/Montserrat-Medium.ttf</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:letterSpacing">0.5</item>
+    </style>
+
+    <style name="TextMenuHeader" parent="TextMenu">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="TextCharacter" parent="AppTheme">
+        <item name="android:textSize">18sp</item>
+        <item name="fontPath">fonts/Helvetica45Light_22437.ttf</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextCharacterBold" parent="TextCharacter">
+        <item name="fontPath">fonts/Helvetica65Medium_22443.ttf</item>
+    </style>
+
+    <style name="AppTheme.Widget.ButtonSmall" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:drawablePadding">@dimen/button_drawable_padding</item>
+    </style>
+
+    <style name="AppTheme.Widget.ImageButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@null</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+
+
+    <style name="AppTheme.Widget.Button" parent="AppTheme.Widget.ButtonSmall">
+        <item name="android:background">@drawable/background_button</item>
+        <item name="android:height">@dimen/button_height</item>
+        <item name="android:width">@dimen/button_width</item>
+        <item name="android:paddingStart">@dimen/button_padding</item>
+        <item name="android:paddingEnd">@dimen/button_padding</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AppTheme.Widget.ButtonPrimary" parent="AppTheme.Widget.Button">
+        <item name="android:background">@drawable/background_button_primary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:drawablePadding">-24dp</item>
+    </style>
+
+    <style name="AppTheme.Widget.ButtonPrimaryAlt" parent="AppTheme.Widget.Button">
+        <item name="android:background">@drawable/background_button_primary</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.Widget.ButtonPrimaryAlt2" parent="AppTheme.Widget.ButtonPrimaryAlt">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:height">54dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+    </style>
+
+    <style name="AppTheme.Widget.ButtonMini" parent="AppTheme.Widget.ButtonPrimaryAlt">
+        <item name="android:width">0dp</item>
+        <item name="height">0dp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.Widget.ButtonMiniNoTint" parent="AppTheme.Widget.ButtonMini">
+    </style>
+
+    <style name="AppTheme.Widget.ButtonMenu" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:minWidth">24dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="AppTheme.Widget.ChapterButton" parent="AppTheme.Widget.ButtonSmall">
+        <item name="android:padding">0dp</item>
+        <item name="fontPath">fonts/Montserrat-Medium.ttf</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0.5</item>
+        <item name="android:textColor">@drawable/background_chapter_button_color</item>
+    </style>
+
+
+    <style name="AppTheme.Widget.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/background_edittext</item>
+        <item name="android:height">@dimen/edittext_height</item>
+        <item name="android:minHeight">@dimen/edittext_height</item>
+        <item name="android:width">@dimen/edittext_width</item>
+        <item name="android:paddingStart">@dimen/edittext_padding</item>
+        <item name="android:paddingEnd">@dimen/edittext_padding</item>
+        <item name="android:textSize">@dimen/edittext_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AppTheme.Widget.CheckBox" parent="android:Widget.Holo.Light.CompoundButton.CheckBox">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:buttonTint">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.Widget.TextViewHeader" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/Montserrat-Medium.ttf</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:maxLines">1</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMinTextSize">48sp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:letterSpacing">0.5</item>
+    </style>
+
+    <style name="AppTheme.Widget.TextViewSubtitle" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/Montserrat-Medium.ttf</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:letterSpacing">0.5</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:homeAsUpIndicator">@drawable/ic_drawer_closed</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolBarTheme" parent="">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:contentInsetLeft">0dp</item>
+    </style>
+
+
+</resources>

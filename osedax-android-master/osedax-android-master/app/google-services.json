@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "1089033762155",
+    "project_id": "osedax-38f4c",
+    "storage_bucket": "osedax-38f4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089033762155:android:f167ccfc7e471c3b64882e",
+        "android_client_info": {
+          "package_name": "com.blkpos.osedax"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089033762155-r1kql25h8d4nrk5gfu84i7sld4s1e4h6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9zDK--1Z6F1b19dDndGdklAOvNmBe1Rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089033762155-r1kql25h8d4nrk5gfu84i7sld4s1e4h6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1089033762155-aktisc4uqi0338uipbklsekjkn0sqgdq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blkpos.osedax"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089033762155:android:de28d25b02bc35f864882e",
+        "android_client_info": {
+          "package_name": "com.osedax.osedaxapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089033762155-r1kql25h8d4nrk5gfu84i7sld4s1e4h6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9zDK--1Z6F1b19dDndGdklAOvNmBe1Rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089033762155-r1kql25h8d4nrk5gfu84i7sld4s1e4h6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1089033762155-aktisc4uqi0338uipbklsekjkn0sqgdq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blkpos.osedax"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

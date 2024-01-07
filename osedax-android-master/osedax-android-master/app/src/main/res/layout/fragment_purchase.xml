@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.WelcomeFragment"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_padding"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/purchase"
+                />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.Widget.ReadingTextViewAlt"
+                android:textColor="@android:color/white"
+                android:text="@string/choose_your_reading_options"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:lineHeight="32sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView"
+                android:layout_marginTop="48dp"
+
+                />
+
+            <TextView
+                android:id="@+id/subtitleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.Widget.ReadingTextViewAlt"
+                android:textColor="@android:color/white"
+                android:text="@string/try_the_free_version"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:lineHeight="32sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleTextView"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+
+                />
+            <Button
+                android:id="@+id/skipButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subtitleTextView"
+                android:layout_marginTop="32dp"
+                style="@style/AppTheme.Widget.ButtonPrimaryAlt2"
+                android:text="@string/read_free"
+                android:minWidth="0dp"
+                android:padding="0dp"
+                />
+
+            <Button
+                android:id="@+id/purchaseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skipButton"
+                android:layout_marginTop="32dp"
+                style="@style/AppTheme.Widget.ButtonPrimaryAlt2"
+                android:text="@string/remove_ads"
+                android:minWidth="0dp"
+                android:padding="0dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="87dp"
+                android:indeterminateTint="?attr/colorAccent"
+                app:layout_constraintEnd_toEndOf="@id/purchaseButton"
+                app:layout_constraintStart_toStartOf="@id/purchaseButton"
+                app:layout_constraintTop_toTopOf="@id/purchaseButton"
+                app:layout_constraintBottom_toBottomOf="@id/purchaseButton"
+                android:visibility="gone"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

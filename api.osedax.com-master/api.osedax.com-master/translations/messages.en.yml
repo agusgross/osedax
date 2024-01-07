@@ -1,0 +1,2 @@
+recover_password_email_subject: Your password with Osedax
+recover_password_email_body: Your new password in Osedax is %password%. Once you have logged in, you can change it in your profile.

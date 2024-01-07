@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="63" id="wt0-Pj-rc6" customClass="EpisodeTitleTableViewCell" customModule="Osedax" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wt0-Pj-rc6" id="t8i-dm-Uby">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUN-fR-Csa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vn2-DK-FvE" customClass="Label" customModule="Osedax" customModuleProvider="target">
+                                <rect key="frame" x="36" y="25" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat Medium" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="letterSpacing">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gt-uD-yMQ" customClass="Label" customModule="Osedax" customModuleProvider="target">
+                                <rect key="frame" x="24" y="25" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat Medium" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="letterSpacing">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vn2-DK-FvE" firstAttribute="leading" secondItem="6gt-uD-yMQ" secondAttribute="trailing" constant="12" id="EUV-Dv-ovM"/>
+                            <constraint firstItem="6gt-uD-yMQ" firstAttribute="leading" secondItem="QUN-fR-Csa" secondAttribute="leading" constant="24" id="j5r-6g-e13"/>
+                            <constraint firstAttribute="height" constant="50" id="lVh-XM-UnB"/>
+                            <constraint firstItem="Vn2-DK-FvE" firstAttribute="centerY" secondItem="QUN-fR-Csa" secondAttribute="centerY" id="uhc-q6-mlC"/>
+                            <constraint firstItem="Vn2-DK-FvE" firstAttribute="firstBaseline" secondItem="6gt-uD-yMQ" secondAttribute="firstBaseline" id="yus-8R-cWn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="QUN-fR-Csa" secondAttribute="trailing" id="KRg-lI-EDt"/>
+                    <constraint firstItem="QUN-fR-Csa" firstAttribute="leading" secondItem="t8i-dm-Uby" secondAttribute="leading" id="OCg-b4-jX9"/>
+                    <constraint firstAttribute="bottom" secondItem="QUN-fR-Csa" secondAttribute="bottom" id="TwO-7A-nkI"/>
+                    <constraint firstItem="QUN-fR-Csa" firstAttribute="top" secondItem="t8i-dm-Uby" secondAttribute="top" id="mBm-sH-vlq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="episodeNumberLabel" destination="6gt-uD-yMQ" id="L1r-Ia-pht"/>
+                <outlet property="episodeTitleLabel" destination="Vn2-DK-FvE" id="EoW-DT-A4s"/>
+            </connections>
+            <point key="canvasLocation" x="-169.56521739130437" y="-47.879464285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

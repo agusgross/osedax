@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Widget.ReadingTextView" parent="AppTheme.Widget.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:lineHeight">48dp</item>
+    </style>
+
+    <style name="AppTheme.Widget.ReadingTextViewAlt" parent="AppTheme.Widget.ReadingTextView">
+        <item name="android:lineHeight">14dp</item>
+    </style>
+</resources>

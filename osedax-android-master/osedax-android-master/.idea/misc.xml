@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bg_background.xml" value="0.48194444444444445" />
+        <entry key="app/src/main/res/drawable/bg_purchase_chapter.xml" value="0.48194444444444445" />
+        <entry key="app/src/main/res/layout/fragment_character.xml" value="0.4675925925925926" />
+        <entry key="app/src/main/res/layout/fragment_characters.xml" value="0.4675925925925926" />
+        <entry key="app/src/main/res/layout/fragment_clippings.xml" value="0.4675925925925926" />
+        <entry key="app/src/main/res/layout/fragment_empty.xml" value="0.4675925925925926" />
+        <entry key="app/src/main/res/layout/fragment_intro.xml" value="0.4675925925925926" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.4675925925925926" />
+        <entry key="app/src/main/res/layout/fragment_purchase.xml" value="0.3917572463768116" />
+        <entry key="app/src/main/res/layout/fragment_purchase_chapter.xml" value="0.4675925925925926" />
+        <entry key="app/src/main/res/layout/fragment_purchases.xml" value="0.4675925925925926" />
+        <entry key="app/src/main/res/layout/fragment_read.xml" value="0.4675925925925926" />
+        <entry key="app/src/main/res/layout/fragment_recover.xml" value="0.4675925925925926" />
+        <entry key="app/src/main/res/layout/fragment_text.xml" value="0.4675925925925926" />
+        <entry key="app/src/main/res/layout/fragment_welcome.xml" value="0.4675925925925926" />
+        <entry key="app/src/main/res/layout/layout_loading.xml" value="0.4675925925925926" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Android API 28 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

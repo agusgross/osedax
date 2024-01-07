@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="B7u-ks-rHm" customClass="ChapterTitleView" customModule="Osedax" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNw-qE-qMm">
+                    <rect key="frame" x="0.0" y="0.0" width="268" height="53"/>
+                    <color key="backgroundColor" name="ColorAccent"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat Medium" pointSize="18"/>
+                    <state key="normal" title="uno">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapButton:" destination="B7u-ks-rHm" eventType="touchUpInside" id="xf7-8M-d5P"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_close_menu" translatesAutoresizingMaskIntoConstraints="NO" id="264-MK-GGv">
+                    <rect key="frame" x="247" y="21" width="9" height="11"/>
+                </imageView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ie-s9-Eb2">
+                    <rect key="frame" x="0.0" y="52" width="268" height="1"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dGp-ed-ZSM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="pHo-g3-e9v"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="pHo-g3-e9v" firstAttribute="trailing" secondItem="264-MK-GGv" secondAttribute="trailing" constant="12" id="JhR-YB-4q2"/>
+                <constraint firstAttribute="trailing" secondItem="bNw-qE-qMm" secondAttribute="trailing" id="Nor-tx-tJS"/>
+                <constraint firstAttribute="bottom" secondItem="bNw-qE-qMm" secondAttribute="bottom" id="RJT-g5-vad"/>
+                <constraint firstItem="pHo-g3-e9v" firstAttribute="trailing" secondItem="7Ie-s9-Eb2" secondAttribute="trailing" id="cd7-NE-Wl9"/>
+                <constraint firstItem="pHo-g3-e9v" firstAttribute="leading" secondItem="7Ie-s9-Eb2" secondAttribute="leading" id="pJT-6l-fic"/>
+                <constraint firstItem="7Ie-s9-Eb2" firstAttribute="bottom" secondItem="pHo-g3-e9v" secondAttribute="bottom" id="qd4-Ou-JMX"/>
+                <constraint firstItem="264-MK-GGv" firstAttribute="centerY" secondItem="B7u-ks-rHm" secondAttribute="centerY" id="tTf-oC-AmN"/>
+                <constraint firstItem="bNw-qE-qMm" firstAttribute="leading" secondItem="B7u-ks-rHm" secondAttribute="leading" id="vRp-5t-Gjy"/>
+                <constraint firstItem="bNw-qE-qMm" firstAttribute="top" secondItem="B7u-ks-rHm" secondAttribute="top" id="whJ-pb-sP8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="letterSpacing">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="borderBottomView" destination="7Ie-s9-Eb2" id="uvg-oi-0FA"/>
+                <outlet property="button" destination="bNw-qE-qMm" id="Pum-HF-2VI"/>
+                <outlet property="closeMenuImageView" destination="264-MK-GGv" id="mLb-3f-guc"/>
+            </connections>
+            <point key="canvasLocation" x="540.57971014492762" y="-271.54017857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close_menu" width="9" height="11"/>
+        <namedColor name="ColorAccent">
+            <color red="0.14901960784313725" green="0.89803921568627454" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/WelcomeFragment">
+
+    <fragment
+        android:id="@+id/WelcomeFragment"
+        android:name="com.blkpos.osedax.fragment.WelcomeFragment"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/action_WelcomeFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+        <action
+            android:id="@+id/action_WelcomeFragment_to_SignUpFragment"
+            app:destination="@id/SignUpFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.blkpos.osedax.fragment.LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_RecoverFragment"
+            app:destination="@id/RecoverFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.blkpos.osedax.fragment.SignUpFragment"
+        tools:layout="@layout/fragment_signup">
+
+        <action
+            android:id="@+id/action_SignUpFragment_to_PurchaseFragment"
+            app:destination="@id/PurchaseFragment"
+            app:popUpTo="@id/WelcomeFragment"
+            app:popUpToInclusive="true"
+            />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/RecoverFragment"
+        android:name="com.blkpos.osedax.fragment.RecoverFragment"
+        tools:layout="@layout/fragment_recover">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/PurchaseFragment"
+        android:name="com.blkpos.osedax.fragment.PurchaseFragment"
+        tools:layout="@layout/fragment_purchase">
+
+    </fragment>
+
+</navigation>

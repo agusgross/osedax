@@ -1,0 +1,104 @@
+/* 
+  Localizable.strings
+  Osedax
+
+  Created by Gustavo Rago on 3/13/21.
+  
+*/
+"app_name" = "Osedax";
+"action_settings" = "Settings";
+"first_fragment_label" = "First Fragment";
+"second_fragment_label" = "Second Fragment";
+"next" = "Next";
+"hello_first_fragment" = "Hello first fragment";
+"hello_second_fragment" = "Hello second fragment. Arg: %1$s";
+"select_an_option" = "Por favor, selecciona una opción.";
+"create_an_account" = "Crear una cuenta";
+"login_with_my_account" = "Ingresar con mi cuenta";
+"email_address" = "DIRECCIÓN DE E-MAIL";
+"password" = "CONTRASEÑA";
+"recover_password" = "Recuperar contraseña";
+"login" = "Ingresar";
+"login_error" = "E-mail o contraseña incorrectos";
+"sign_up_to_start_reading" = "Ingresa para comenzar a leer.";
+"all_fields_are_required" = "Todos los campos son requeridos";
+"nickname" = "NOMBRE DE USUARIO";
+"first_name" = "NOMBRE";
+"last_name" = "APELLIDO";
+"reepat_password" = "REPITE LA CONTRASEÑA";
+"sign_up" = "Registrarme";
+"email_notifications" = "Quiero recibir un e-mail cuando\nse encuentre disponible un nuevo capítulo.";
+"please_verify_the_following" = "Por favor, verifica lo siguiente:";
+"user.email.unique" = "La dirección de e-mail ya se encuentra registrada";
+"user.id.type" = "El usuario no es válido";
+"user.email.not_blank" = "Debes ingresar una dirección de e-mail";
+"user.email.type" = "Debes ingresar una dirección de e-mail válida";
+"user.password.not_blank" = "Debes ingresar una contraseña";
+"user.password.length_min" = "La contraseña debe tener al menos 8 caracteres";
+"user.password.length_max" = "La contraseña no puede tener más de 40 caracteres";
+"user.first_name.not_blank" = "Debes ingresar tu nombre";
+"user.first_name.length_min" = "El nombre debe tener al menos 3 caracteres";
+"user.first_name.length_max" = "El nombre no puede tener más de 40 caracteres";
+"user.last_name.not_blank" = "Debes ingresar tu apellido";
+"user.last_name.length_min" = "El apellido debe tener al menos 3 caracteres";
+"user.last_name.length_max" = "El apellido no puede tener más de 40 caracteres";
+"we_will_send_your_password" = "Enviaremos tu contraseña a la dirección de e-mail asociada a tu cuenta.";
+"the_password_was_sent" = "Se envió la contraseña a la dirección de e-mail especificada.";
+"email_not_found" = "La dirección de e-mail especificada no se encuentra registrada aún.";
+"ok" = "OK";
+"account" = "cuenta";
+"characters" = "personajes";
+"favorites" = "favoritos";
+"purchases" = "compras";
+"chapters" = "capítulos";
+"start" = "Empezar";
+"select_the" = "Selecciona a";
+"first_character" = "primer personaje.";
+"second_character" = "segundo personaje.";
+"third_character" = "tercer personaje.";
+"previous" = "Anterior";
+"previous_character" = "Personaje anterior";
+"select_character" = "Seleccionar personaje";
+"chapter_1_title" = "Uno";
+"chapter_1_1" = "I cierra las ojos y se acerca hacia el otra lado del cama, junto a la cuerpo de RE. Intenta rodearle la cintura, pero apenas lo toca se hunde sobre ella hasta llegar a sentir el firmeza de la colchón debajo de su cuerpo, como si hubiera querido abrazar algo sin huesos, relleno de algodón. BI se levanta de un salto. Su pecho sube y baja violentamente mientras respira de manera agitado, dando bocanadas de aire.\n
+\t\t—RE... —balbucea, observándolo con una expresión de terror.\n
+\t\tAcerca un mano temblorosa hacia su cuello, lo toca con el dedo índice y esta se hunde otra vez... se hunde sobre un interior mullida, esponjoso. BI comienza a sollozar. Se lleva el mano a la cara, tapándose el boca con fuerza. Niega con la cabeza de manera lento, atontada. Observa a RE con los ojos idas, fijos en algo transparente... Una hilo fino, de plástico, como la tanza que une los mostacillas de sus pulseras. Desde la piel detrás de cada oreja, forma un línea recta, extendiéndose a ambos lados de su cuello. Es... es una costura. BI cierra las ojos con una gesto de dolor. Se aleja de la cuerpo con pasos torpes, caminando hasta el mesita de noche. Agarra su teléfono de manera rápido, marca la número de emergencias y se lo queda mirando sobre la pantalla con ojos inexpresivas. El pulgar suspendida en el aire, delante de la botón de llamada. Entonces su rostro se contrae lentamente, cargándose de ira. Grita, arrojando el teléfono con violencia.\n
+\t\tRecorre la habitación alfombrado hasta llegar a la armario, rebusca en uno de las cajones y agarra un remera. La desenvuelve, encontrando una pistola. La sujeta con fuerza en un mano mientras comienza a caminar en círculos con pasos nerviosas. Gesticula como si estuviera hablando consigo mismo, pasándose la dorso del mano sobre su frente cubierta de sudor. Pasan unos segundos hasta que se detiene con las lágrimas secos sobre su rostro, suspirando mientras apoya las manos sobre el cintura. Calmada, asiente levemente con el cabeza para darse confianza y agarra la teléfono que había arrojado al piso. Busca entre sus contactos y llama a NU+8715.\n
+\t\t—BI... ¿qué... qué pasa? —le responde una voz cansado, acabando de despertar.\n
+\t\t—Se la llevaron.\n
+\t\t—¿Qué...? ¿A quién?\n
+\t\t—No está, se lo llevaron —repite con tono seco, carente de emoción.\n
+\t\t—¿A quién? ¿A quién se llevaron? —Silencio—. BI, contéstame. ¿A quién se llevaron?\n
+\t\t—RE, no... no está.\n
+\t\t—¿Cómo que no está... ?\n
+\t\t—Por favor... –se le quiebra el voz —por favor, vení.\n
+\t\t—¿Dónde estás? ¿Estás en tu casa? —Al no obtener respuesta, insiste—: ¡BI! ¿Estás en tu casa?\n
+\t\t—Sí... —logra decir, limpiando una lágrima sobre su mejilla.\n
+\t\t—Ya voy. Esperame que ya voy.\n
+\t\tNU corta la comunicación y BI se queda con el teléfono sobre su oreja, mirando la cuerpo de RE con los ojos perdidas. Guarda el aparato dentro de la bolsillo de su jogging y camina hacia ella con pasos cautelosos. Le acaricia una mechón de pelo, mirándolo de manera dulce, casi melancólica. Luego baja los ojos hacia su cuello, donde la tatuaje del fino tallo de una flor crece hasta llegar al costado de su oreja, expandiendo sus pétalos redondeadas.\n\n
+
+Un amapola. Ahora roto, partida en dos por un costura de hilo transparente. BI aparta la mano del cabello de RE, sacudiéndola en el aire como si le quemara. Se la pasa por el cara, cubriéndose la boca mientras se le enrojecen los ojos. Ahoga una grito. Camina hacia el puerta y se detiene debajo de la marco, golpeándolo con fuerza. Apoya la frente sobre su antebrazo, sosteniéndose contra él. Gira el cabeza hacia RE y la aparta enseguida, dándole sucesivas golpes al pared. Entonces aprieta la pistola con la mano y se va, cerrando el puerta de una portazo. Abandonado, la cuerpo de RE continúa acostado en la medio del angosta habitación. Los manos aferradas a los sábanas como si se abrigara de la frío, el rostro tranquila, soñando profundamente.
+";
+"purchase_now" = "Comprar ahora";
+"in_order_to_read" = "Adquiere el capítulo completo para eliminar los anuncios, o desliza hacia abajo para continuar la lectura.";
+"in_order_to_read_end" = "Adquiere el capítulo completo para eliminar los anuncios.";
+"clipping_saved" = "El texto seleccionado fue guardado en favoritos.";
+"clippings_empty" = "Aún no tienes favoritos. Selecciona un fragmento en cualquier parte de la lectura y toca el botón de guardar. Los favoritos que guardes los podrás encontrar aquí.";
+"edit_your_profile_details" = "Edita los detalles de tu perfil.";
+"save" = "Guardar";
+"restore_purchases" = "Restaurar compras";
+"restore_purchases_description" = "Si ya has comprado contenido con tu cuenta, y no puedes acceder a todos los capítulos que has comprado, toca el botón Restaurar compras para descargar los episodios faltantes.";
+"purchases_restored" = "Se han restaurado las compras";
+
+"by_signing_up_you_accept" = "Al registrarte, aceptas nuestros %@ y nuestra %@.";
+"terms_and_conditions" = "Términos y Condiciones";
+"privacy_policy" = "Política de Privacidad";
+"support_text" = "¿Tiene inconvenientes para registrarse? %@";
+"contact_us" = "Contáctenos";
+
+"read_free" = "Leer gratis";
+"remove_ads" = "Retirar anuncios";
+"choose_your_reading_options" = "Elige tus opciones de lectura";
+"try_the_free_version" = "Prueba la versión gratuita o adquiere el capítulo para retirar los anuncios";
+"keep_reading" = "Continúa con la versión gratuita o adquiere el capítulo para retirar los anuncios";
+"continue_" = "Continuar";

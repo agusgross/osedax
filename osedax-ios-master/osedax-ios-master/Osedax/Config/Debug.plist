@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseUrl</key>
+	<string>https://osedax-api2.blkpos.com/</string>
+	<key>ImagesUrl</key>
+	<string>https://osedax-api2.blkpos.com/</string>
+	<key>ClientId</key>
+	<string>1_24scdje5igxwg4oskcsc84o0cksgso88kgg04kokw448sss08o</string>
+	<key>ClientSecret</key>
+	<string>3gtc6eoo4iucwgg08g8k00k00s4488o84000oswwwgoso8808c</string>
+</dict>
+</plist>

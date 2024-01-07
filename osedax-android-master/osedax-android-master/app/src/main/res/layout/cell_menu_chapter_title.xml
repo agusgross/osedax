@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:id="@+id/titleLayout"
+    android:layout_height="50dp"
+    android:background="@color/colorAccent"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:layout_marginTop="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextMenuHeader"
+        android:text="uno"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        />
+
+    <ImageButton
+        android:id="@+id/openButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.Widget.ButtonMenu"
+        android:src="@drawable/ic_close_menu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/episodesLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:orientation="vertical"
+        >
+
+
+    </LinearLayout>
+</RelativeLayout>
